@@ -34,8 +34,8 @@ fun printInts(vararg ints: Int): Unit {
 fun createUser(id: Int): Pair<String?, String?> {
     require(id > 0) { "id inválida" }
 
-    val nomes: Map<Int, String> = mapOf(1 to "Caio", 102 to "Barbara", 104 to "Joca")
-    val cidades: Map<Int, String> = mapOf(1 to "Sbc", 102 to "Sp", 104 to "Scs")
+    val nomes: Map<Int, String> = mapOf(101 to "Caio", 102 to "Barbara", 104 to "Joca")
+    val cidades: Map<Int, String> = mapOf(101 to "Sbc", 102 to "Sp", 104 to "Scs")
 
     val nome = nomes[id]
     val cidade = cidades[id]
@@ -45,8 +45,8 @@ fun createUser(id: Int): Pair<String?, String?> {
 fun createUserWithID(id: Int): Triple<String?, String?, Int> {
     require(id > 0) { "id inválida" }
 
-    val nomes: Map<Int, String> = mapOf(1 to "Caio", 102 to "Barbara", 104 to "Joca")
-    val cidades: Map<Int, String> = mapOf(1 to "Sbc", 102 to "Sp", 104 to "Scs")
+    val nomes: Map<Int, String> = mapOf(101 to "Caio", 102 to "Barbara", 104 to "Joca")
+    val cidades: Map<Int, String> = mapOf(101 to "Sbc", 102 to "Sp", 104 to "Scs")
 
     val nome = nomes[id]
     val cidade = cidades[id]
